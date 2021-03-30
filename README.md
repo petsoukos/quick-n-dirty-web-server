@@ -25,7 +25,7 @@ It will run the commands with sudo and will initially ask for your user password
 - php7.4-xml
 - php7.4-zip
 
-It will also download **composer** and install it globally and will also grab and install **NodeJS** from [Nodesource](https://github.com/nodesource/distributions).
+It will also download [**composer**](https://getcomposer.org) and install it globally and will also grab and install **NodeJS** from [Nodesource](https://github.com/nodesource/distributions).
 
 **Why the installation of Redis, Composer, and NodeJS?**
 I use this script to develop Laravel projects and those packages are needed for my purposes.
