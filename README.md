@@ -1,4 +1,4 @@
-# quick-n-dirty-web-server
+# Quick'n'Dirty Web Server for developing Laravel projects.
 A bash script that installs quickly and dirty a web server on an *Ubuntu 20.04.x* installation.
 
 Download the file and then: **chmod +x quick_server**
