@@ -17,6 +17,7 @@ It will run the commands with sudo and will initially ask for your user password
 - certbot
 - nginx
 - redis-server
+- sqlite3
 - php7.4-fpm 
 - php7.4-bcmath 
 - php7.4-bz2
@@ -29,6 +30,7 @@ It will run the commands with sudo and will initially ask for your user password
 - php7.4-mysql
 - php7.4-xml
 - php7.4-zip
+- php7.4-sqlite3
 
 It will also download [**composer**](https://getcomposer.org) and install it globally and will also grab and install **NodeJS** from [Nodesource](https://github.com/nodesource/distributions).
 
