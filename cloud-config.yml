@@ -1,0 +1,35 @@
+#cloud-config
+users:
+  - name: CHANGE_ME YOURUSER
+    groups: sudo
+    shell: /bin/bash
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    ssh-authorized-keys:
+      - CHANGE_ME YOUR_PUB_KEY
+package_upgrade: true
+packages:
+  - git
+  - mysql-server-8.0
+  - certbot
+  - nginx
+  - redis-server
+  - sqlite3
+  - php7.4-fpm
+  - php7.4-bcmath
+  - php7.4-bz2
+  - php7.4-cli
+  - php7.4-common
+  - php7.4-curl
+  - php7.4-gd
+  - php7.4-json
+  - php7.4-mbstring
+  - php7.4-mysql
+  - php7.4-xml
+  - php7.4-zip
+  - php7.4-sqlite3
+  - php-redis
+  - unzip
+runcmd:
+  - "curl -fsSL https://deb.nodesource.com/setup_16.x | bash -"
+  - [apt-get, install, -y, nodejs]
+final_message: "The system is finally up, after $UPTIME seconds"
